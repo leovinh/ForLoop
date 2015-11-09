@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,9 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-kr-8ho">
-                                <rect key="frame" x="168" y="250" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2X-kr-8ho">
+                                <rect key="frame" x="164" y="318.5" width="38" height="30"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IEP-hk-pah"/>
+                                    <constraint firstAttribute="width" constant="38" id="JG9-e3-YfH"/>
+                                </constraints>
                                 <state key="normal" title="Creat"/>
                                 <connections>
                                     <action selector="Creat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPC-BU-VKZ"/>
@@ -28,6 +33,13 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D2X-kr-8ho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AUW-fp-Zy1"/>
+                            <constraint firstItem="D2X-kr-8ho" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E2q-EV-lws"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D2X-kr-8ho" secondAttribute="trailing" constant="149" id="gYY-7X-XNe"/>
+                            <constraint firstItem="D2X-kr-8ho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="hZY-xi-Vsb"/>
+                            <constraint firstItem="D2X-kr-8ho" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="298.5" id="zfa-AH-psE"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
